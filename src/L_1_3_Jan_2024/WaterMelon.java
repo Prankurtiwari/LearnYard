@@ -1,8 +1,9 @@
-package Lecture1;
+package L_1_3_Jan_2024;
 
 /*
     You have a watermelon weight W where 1<W<1000 divide the
     melon into two such that both weight are even.
+    https://codeforces.com/problemset/problem/4/A
 */
 public class WaterMelon {
 
