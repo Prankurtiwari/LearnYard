@@ -6,6 +6,9 @@ package L_7_12_Jan_2024;
 *  "it seems that 1 condition is missing, which is that the number of bananas given to each of the people should be equal."
 *
 * Basically: find weather number is prime or not.
+* how:  x * y = N
+*      N can only be divided equally if x and y are real factor of N . If x = 1 or N y = 1 or N
+*      then N can't be divided, and it is not possible to divide. Basic logic.
 * */
 public class GoneBananas {
     public static void main(String[] args) {
