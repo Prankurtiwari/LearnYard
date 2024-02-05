@@ -24,19 +24,19 @@ public class NonDescArray {
 
     // Self O(n2)
 
-    private static int[] nonDesc(int[] arr2) {
-        int[] result = new int[arr2.length];
-        result[0] = arr2[0];
-
-        for(int i= 1; i< arr2.length; i++) {
-            int j = 1;
-            while (j*arr2[i] < arr2[i-1] || j*arr2[i] < result[i-1]) {
-              j++;
-            }
-            result[i] = j*arr2[i];
-        }
-        return result;
-    }
+//    private static int[] nonDesc(int[] arr2) {
+//        int[] result = new int[arr2.length];
+//        result[0] = arr2[0];
+//
+//        for(int i= 1; i< arr2.length; i++) {
+//            int j = 1;
+//            while (j*arr2[i] < arr2[i-1] || j*arr2[i] < result[i-1]) {
+//              j++;
+//            }
+//            result[i] = j*arr2[i];
+//        }
+//        return result;
+//    }
 
 
 
@@ -49,16 +49,16 @@ public class NonDescArray {
          Explain video: https://www.youtube.com/watch?v=JjWL95M_7OA
      */
 
-//    private static int[] nonDesc(int[] arr2) {
-//        int length = arr2.length;
-//        int[] result = new int[length];
-//        result[0] = arr2[0];
-//        for(int i =1; i<length;i++) {
-//            int div = result[i - 1] / arr2[i];
-//            result[i] = (int) (arr2[i] * Math.ceil(div));
-//        }
-//        return result;
-//    }
+    private static int[] nonDesc(int[] arr2) {
+        int length = arr2.length;
+        int[] result = new int[length];
+        result[0] = arr2[0];
+        for(int i =1; i<length;i++) {
+            double div = result[i - 1] * 1.0 / arr2[i];
+            result[i] = (int) (arr2[i] * Math.ceil(div));
+        }
+        return result;
+    }
 
 
 
