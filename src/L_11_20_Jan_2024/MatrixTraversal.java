@@ -14,7 +14,7 @@ public class MatrixTraversal {
 
             // We need to print jth column
             for(int j = 0; j < crr[i].length; ++j)
-                System.out.print(crr[i][j] + " ");
+                 System.out.print(crr[i][j] + " ");
             System.out.println();
         }
 
