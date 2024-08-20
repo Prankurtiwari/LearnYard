@@ -9,7 +9,7 @@ package L_37_6_Mar_2024;
 * Ex: {1,6,4,7,10,9}
 * here 1 and 7 are searchable in Binary search always and other element may be may not be.
 * */
-public class RandamiseBS {
+public class RandomiseBS {
     public static void main(String[] args) {
         int[] arr = {1,6,4,7,10,9};
         System.out.println("Count = " + count(arr));
